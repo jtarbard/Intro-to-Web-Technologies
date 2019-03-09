@@ -1,0 +1,68 @@
+/*Portfolio Styles */
+.titleContainer {
+	height: 8vh;
+	font-size: 2rem;
+	font-style: italic;
+	text-align: center;
+	line-height: 8vh;
+	color: #f1f1f1;
+	background-color: #2d2d2d;
+}
+
+.linkContainer {
+	display: block;
+	height: 10vh;
+	width: 100%;
+	font-size: 2.5rem;
+	text-align: center;
+	line-height: 10vh;
+	color: #f1f1f1;
+	background: #d34836 url("../resources/code_background4.jpg") no-repeat center;
+}
+
+.linkContainer:nth-child(odd) {
+	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
+}
+
+.linkContainer .titleContainer {
+	width: 100%;
+}
+
+.linkContainer h2 {
+	float: left;
+	width: 60%;
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+.linkContainer img {
+	float: right;
+	max-height: 9vh;
+	min-width: 30%;
+	max-width: 30vw;
+	padding: 0.5vh 0;
+	padding-right: 0.5vw;
+	object-fit: cover;
+	-webkit-filter: grayscale(100%);
+}
+
+.imageContainer {
+	display: block;
+	float: right;
+	height: 10vh;
+	width: 100%;
+	font-size: 2.5rem;
+	text-align: center;
+	line-height: 10vh;
+	background-color: #f1f1f1;
+}
+
+#footer {
+	display: block;
+	position: absolute;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	bottom: 0;
+	line-height: 10vh;
+	background-color: #f1f1f1;
+}

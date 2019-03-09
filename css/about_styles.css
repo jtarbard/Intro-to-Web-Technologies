@@ -1,0 +1,68 @@
+/*About Styles*/
+#about {
+	width: 100%;
+	padding-bottom: 1rem;
+	margin: auto;
+}
+
+#statement {
+	padding-top: 3rem;
+	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
+}
+
+#statement p {
+	font-size: 1.3rem;
+	margin-bottom: 4%;
+	padding-bottom: 3rem;
+	color: white;
+}
+
+#about h1 {
+	width: 70%;
+	margin: auto;
+	font-size: 1.6rem;
+	color: white;
+}
+
+#about h2 {
+	width: 70%;
+	margin: auto;
+	font-size: 1.5rem;
+	color: #d34836;
+}
+
+#about p {
+	width: 70%;
+	margin: auto;
+	font-size: 1.2rem;
+	margin-bottom: 3%;
+}
+
+#download {
+	width: 70%;
+	height: 10%;
+	margin: auto;
+	font-size: 1.5rem;
+	color: #d34836;
+}
+
+#bookmark {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+h3 {
+	padding-bottom: 1rem;
+	font-size: 1.6rem;
+	color: #d34836;
+}
+
+#footer {
+	display: block;
+	position: block;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	bottom: 0;
+	line-height: 10vh;
+	background-color: #f1f1f1;
+}

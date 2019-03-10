@@ -6,6 +6,7 @@
   /* height: 15%; */
 	padding-top: 3rem;
 	padding-bottom: 1.5rem;
+  margin-bottom: 4rem;
 	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
 }
 
@@ -32,13 +33,13 @@
 
 .row {
   display: block;
-  height: 17vh;
+  height: 13vh;
 }
 
 .row h1 {
   text-align: center;
   font-size: 1.6rem;
-  line-height: 17vh;
+  overflow-wrap: break-word;
 }
 
 .title {

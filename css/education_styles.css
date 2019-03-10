@@ -1,7 +1,7 @@
 /*Education Styles*/
 body {
 	overflow-x: hidden;
-	background: #d34836 url("../resources/code_background4.jpg") no-repeat center;
+	background: #d34836 url("../resources/code_background4.jpg") center;
 }
 
 #main {

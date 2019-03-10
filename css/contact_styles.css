@@ -52,7 +52,7 @@
 
 #footer {
 	display: block;
-	position: block;
+	position: absolute;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	bottom: 0;

@@ -1,0 +1,48 @@
+/*main Styles*/
+#statement {
+	padding-top: 3rem;
+	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
+}
+
+#statement p {
+	font-size: 1.3rem;
+	margin-bottom: 4%;
+	padding-bottom: 3rem;
+	color: white;
+}
+
+#main {
+	padding-bottom:7vh;
+}
+
+#main h1 {
+	width: 70%;
+	margin: auto;
+	font-size: 1.6rem;
+	color: white;
+}
+
+#main h2 {
+	width: 70%;
+	margin: auto;
+	font-size: 1.5rem;
+	color: #d34836;
+}
+
+#main p {
+	width: 70%;
+	margin: auto;
+	font-size: 1.2rem;
+	margin-bottom: 3%;
+}
+
+#bookmark {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+#main h3 {
+	padding-bottom: 1rem;
+	font-size: 1.6rem;
+	color: #d34836;
+}

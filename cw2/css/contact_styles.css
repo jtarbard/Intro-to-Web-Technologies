@@ -1,0 +1,51 @@
+#main {
+  padding-top: 10vh;
+}
+
+#statement {
+  /* height: 15%; */
+	padding-top: 3rem;
+	padding-bottom: 1.5rem;
+  margin-bottom: 4rem;
+	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
+}
+
+#statement p {
+	font-size: 1.3rem;
+  line-height: 1.3rem;
+	margin-bottom: 4%;
+	color: white;
+}
+
+#statement h1 {
+	width: 70%;
+	margin: auto;
+	font-size: 1.6rem;
+  color: white;
+}
+
+#statement p {
+	width: 70%;
+	margin: auto;
+	font-size: 1.2rem;
+	margin-bottom: 3%;
+}
+
+.row {
+  display: block;
+  height: 13vh;
+}
+
+.row h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+}
+
+.title {
+  color: #d34836;
+}
+
+#mobile {
+  padding-bottom: 1.5rem;
+}

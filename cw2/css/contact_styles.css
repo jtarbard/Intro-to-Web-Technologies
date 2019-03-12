@@ -2,48 +2,44 @@
   padding-top: 10vh;
 }
 
-#statement {
-  /* height: 15%; */
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;
-  margin-bottom: 4rem;
-	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
+#info {
+  display: inline-block;
+  float: left;
+  height: 82vh;
+  width: 50%;
+  background: #2d2d2d;
 }
 
-#statement p {
-	font-size: 1.3rem;
-  line-height: 1.3rem;
-	margin-bottom: 4%;
-	color: white;
+#message {
+  display: inline-block;
+  float: right;
+  height: 82vh;
+  width: 50%;
+  background: #d34836;
 }
 
-#statement h1 {
-	width: 70%;
-	margin: auto;
-	font-size: 1.6rem;
-  color: white;
+.secHead {
+  padding: 4vh 2vw;
+  text-transform: uppercase;
+  color: #f1f1f1;
 }
 
-#statement p {
-	width: 70%;
-	margin: auto;
-	font-size: 1.2rem;
-	margin-bottom: 3%;
+#info h2{
+  padding: 1vh 1vw;
+  padding-left: 2vw;
+  font-size: 1rem;
+  color: #d34836;
+}
+
+#info h3{
+  padding-top: 0.5vh;
+  padding-left: 6vw;
+  color: #f1f1f1;
 }
 
 .row {
   display: block;
   height: 13vh;
-}
-
-.row h1 {
-  text-align: center;
-  font-size: 1.6rem;
-  overflow-wrap: break-word;
-}
-
-.title {
-  color: #d34836;
 }
 
 #mobile {

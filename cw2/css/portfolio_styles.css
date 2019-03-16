@@ -1,5 +1,5 @@
 /*Portfolio Styles */
-.titleContainer {
+/* .titleContainer {
 	height: 11vh;
 	font-size: 2rem;
 	font-style: italic;
@@ -55,4 +55,65 @@
 	text-align: center;
 	line-height: 10vh;
 	background-color: #f1f1f1;
+} */
+#main {
+	background-color: #2d2d2d;
+}
+
+#row1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	overflow: hidden;
+	height: 40vh;
+	width: 80vw;
+	padding: 0 10vw;
+	padding-left: 13.5vw;
+}
+
+#row2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	overflow: hidden;
+	height: 40vh;
+	width: 80vw;
+	padding: 0 10vw;
+	padding-left: 13.5vw;
+}
+
+.linkContainer {
+	display: inline-block;
+	float: left;
+	margin-top: 2vh;
+	height: 90%;
+	width: 73%;
+	background-color: #f1f1f1;
+}
+
+.linkContainer h2 {
+	text-align: center;
+	line-height: 35.9vh;
+}
+
+#register {
+	background: #f1f1f1 url("../resources/project.png");
+}
+
+#quadtree {
+	background: #f1f1f1 url("../resources/quadtree.png");
+}
+
+#hack {
+	background: #f1f1f1 url("../resources/and16.png");
+}
+
+#waiterApp {
+	background: #f1f1f1 url("../resources/schoolregister.png");
+}
+
+#colourPicker {
+	background: #f1f1f1 url("../resources/colourpicker.png");
+}
+
+#xo {
+	background: #f1f1f1 url("../resources/xo.png");
 }

@@ -33,13 +33,36 @@
 
 #info h3{
   padding-top: 0.5vh;
-  padding-left: 6vw;
+  padding-left: 2vw;
   color: #f1f1f1;
+}
+
+label {
+  padding: 1vh 1vw;
+  padding-left: 2vw;
+  font-size: 1rem;
+  color: #2d2d2d;
+}
+
+input, textarea {
+  padding: 1vh 1vw;
+  margin-top: 0.5vh;
+  margin-left: 2vw;
+  margin-bottom: 0.5vh;
+  border: none;
+  color: #f1f1f1;
+  background-color: #A8392B;
 }
 
 .row {
   display: block;
   height: 13vh;
+}
+
+#emessage {
+  float: left;
+  height: 40vh;
+  width: 40vw;
 }
 
 #mobile {

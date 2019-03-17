@@ -1,38 +1,24 @@
 /*Portfolio Styles */
-/* .titleContainer {
-	height: 11vh;
-	font-size: 2rem;
-	font-style: italic;
-	text-align: center;
-	line-height: 11vh;
-	color: #f1f1f1;
-	background-color: #2d2d2d;
-}
-
-.linkContainer {
+/* .linkContainer {
 	display: block;
-	height: 10vh;
+	height: 13.5vh;
 	width: 100%;
 	font-size: 2.5rem;
 	text-align: center;
-	line-height: 10vh;
-	color: #f1f1f1;
-	background: #d34836 url("../resources/code_background4.jpg") no-repeat center;
+	line-height: 13.5vh;
+	color: #f1f1f1; no-repeat center;
 }
 
-.linkContainer:nth-child(odd) {
-	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
-}
-
-.linkContainer .titleContainer {
+.linkContainer {
 	width: 100%;
 }
 
 .linkContainer h2 {
 	float: left;
 	width: 60%;
+	height: 13.5vh;
 	text-decoration: none;
-	color: #f1f1f1;
+	color: #2d2d2d;
 }
 
 .linkContainer img {
@@ -56,64 +42,65 @@
 	line-height: 10vh;
 	background-color: #f1f1f1;
 } */
+
 #main {
+	height: 100%;
+	width: 100%;
+}
+
+#title {
+	float: left;
+	width: 50vw;
+	height: 80vh;
+	padding: 1vh 0;
 	background-color: #2d2d2d;
 }
 
-#row1 {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	overflow: hidden;
-	height: 40vh;
-	width: 80vw;
-	padding: 0 10vw;
-	padding-left: 13.5vw;
-}
-
-#row2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	overflow: hidden;
-	height: 40vh;
-	width: 80vw;
-	padding: 0 10vw;
-	padding-left: 13.5vw;
-}
-
-.linkContainer {
-	display: inline-block;
-	float: left;
-	margin-top: 2vh;
-	height: 90%;
-	width: 73%;
-	background-color: #f1f1f1;
-}
-
-.linkContainer h2 {
+#title li {
+	display: block;
+	height: 20vh;
+	width: 100%;
 	text-align: center;
-	line-height: 35.9vh;
+	line-height: 20vh;
+	font-size: 2rem;
+	color: #f1f1f1;
 }
 
-#register {
-	background: #f1f1f1 url("../resources/project.png");
+#details {
+	float: right;
+	width: 50vw;
+	height: 80vh;
+	padding: 1vh 0;
+	background-color: #d34836;
 }
 
-#quadtree {
-	background: #f1f1f1 url("../resources/quadtree.png");
+#desc {
+	float: left;
+	width: 25vw;
+	height: 80vh;
+	padding: 1vh 0;
+	background-color: #d34836;
 }
 
-#hack {
-	background: #f1f1f1 url("../resources/and16.png");
+#desc li {
+	display: block;
+	height: 20vh;
+	width: 25vw;
+	color: #f1f1f1;
 }
 
-#waiterApp {
-	background: #f1f1f1 url("../resources/schoolregister.png");
+#img {
+	float: right;
+	width: 25vw;
+	height: 80vh;
+	padding: 1vh 0;
+	background-color: #d34836;
 }
 
-#colourPicker {
-	background: #f1f1f1 url("../resources/colourpicker.png");
-}
-
-#xo {
-	background: #f1f1f1 url("../resources/xo.png");
+#img li {
+	display: block;
+	height: 17.5vh;
+	width: 25vw;
+	margin: 1vh 1vw;
+	color: #f1f1f1;
 }

@@ -1,7 +1,8 @@
 /*main Styles*/
 #statement {
 	padding-top: 3rem;
-	background: #d34836 url("../resources/code_background3.jpg") no-repeat center;
+	background: #d34836;
+	/* background: #d34836 url("../resources/code_background3.jpg") no-repeat center; */
 }
 
 #statement p {

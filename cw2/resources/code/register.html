@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #4c8317">#include &lt;string.h&gt;</span>
+<span style="color: #4c8317">#include &quot;treeStructure.h&quot;</span>
+<span style="color: #4c8317">#include &quot;buildTree.h&quot;</span>
+<span style="color: #4c8317">#include &quot;growTree.h&quot;</span>
+<span style="color: #4c8317">#include &quot;writeTree.h&quot;</span>
+<span style="color: #4c8317">#include &quot;destroyTree.h&quot;</span>
+<span style="color: #4c8317">#include &quot;valueTree.h&quot;</span>
+
+<span style="color: #00aaaa">int</span> limit = <span style="color: #009999">9</span>;
+
+<span style="color: #aaaaaa; font-style: italic">//task 1 tests, provide argument &#39;task3&#39; and the limit level as an integer</span>
+<span style="color: #00aaaa">void</span> <span style="color: #00aa00">task1</span>(Node *node, <span style="color: #00aaaa">int</span> level) {
+  <span style="color: #0000aa">if</span>(level == <span style="color: #009999">2</span>){
+    <span style="color: #aaaaaa; font-style: italic">//full level two tree (no grow)</span>
+    makeChildren(node, limit); <span style="color: #aaaaaa; font-style: italic">//level 1</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">0</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">1</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">2</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">3</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+  }
+  <span style="color: #0000aa">else</span> <span style="color: #0000aa">if</span>(level == <span style="color: #009999">3</span>){
+    <span style="color: #aaaaaa; font-style: italic">//non-uniform level three tree (no grow)</span>
+    makeChildren(node, limit); <span style="color: #aaaaaa; font-style: italic">//level 1</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">0</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">1</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">2</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">3</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">1</span>]-&gt;child[<span style="color: #009999">3</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">1</span>]-&gt;child[<span style="color: #009999">1</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+  }
+
+  writeTree(node);
+  destroyTree(node);
+}
+
+<span style="color: #aaaaaa; font-style: italic">//test for task 2</span>
+<span style="color: #00aaaa">void</span> <span style="color: #00aa00">task2</span>(Node *node, <span style="color: #00aaaa">int</span> level) {
+  <span style="color: #0000aa">if</span>(level == <span style="color: #009999">2</span>){
+    makeChildren(node, limit); <span style="color: #aaaaaa; font-style: italic">//level 1</span>
+    growTree(node, limit);
+    growTree(node, limit);
+  }
+  <span style="color: #0000aa">else</span> <span style="color: #0000aa">if</span>(level == <span style="color: #009999">3</span>){
+    makeChildren(node, limit); <span style="color: #aaaaaa; font-style: italic">//level 1</span>
+    growTree(node, limit);
+    makeChildren(node-&gt;child[<span style="color: #009999">1</span>]-&gt;child[<span style="color: #009999">3</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    makeChildren(node-&gt;child[<span style="color: #009999">1</span>]-&gt;child[<span style="color: #009999">1</span>], limit); <span style="color: #aaaaaa; font-style: italic">//level 2</span>
+    growTree(node, limit);
+  }
+  writeTree(node);
+  destroyTree(node);
+}
+
+<span style="color: #aaaaaa; font-style: italic">//task 3 tests, provide argument &#39;task3&#39; and the limit level as an integer</span>
+<span style="color: #00aaaa">void</span> <span style="color: #00aa00">task3</span>(Node *node, <span style="color: #00aaaa">int</span> limit){
+  makeChildren(node, limit); <span style="color: #aaaaaa; font-style: italic">//level 1</span>
+  <span style="color: #0000aa">for</span>(<span style="color: #00aaaa">int</span> i = <span style="color: #009999">0</span>; i &lt; limit+<span style="color: #009999">2</span>; i++){
+    growTree(node, limit);
+  }
+  writeTree(node);
+  destroyTree(node);
+}
+
+<span style="color: #aaaaaa; font-style: italic">//task 4</span>
+<span style="color: #00aaaa">int</span> ran = <span style="color: #009999">0</span>;
+<span style="color: #00aaaa">int</span> falsePasses = <span style="color: #009999">0</span>;
+<span style="color: #00aaaa">int</span> loopCount = <span style="color: #009999">0</span>;
+
+<span style="color: #aaaaaa; font-style: italic">//function for visiting leaves</span>
+<span style="color: #00aaaa">void</span> <span style="color: #00aa00">leaf</span>(Node *node, <span style="color: #00aaaa">double</span> tolerence, <span style="color: #00aaaa">int</span> choice){
+  <span style="color: #0000aa">for</span>(<span style="color: #00aaaa">int</span> i = <span style="color: #009999">0</span>; i &lt; <span style="color: #009999">4</span>; i++){
+    <span style="color: #0000aa">if</span>(node-&gt;child[i] != <span style="color: #00aaaa">NULL</span>){
+      <span style="color: #0000aa">if</span>(indicator(node-&gt;child[i], tolerence, choice) == <span style="color: #00aaaa">false</span>){
+        <span style="color: #0000aa">for</span>(<span style="color: #00aaaa">int</span> j = <span style="color: #009999">0</span>; j &lt; <span style="color: #009999">4</span>; j++){
+          printf(<span style="color: #aa5500">&quot;child++\n&quot;</span>);
+          makeChildren(node-&gt;child[j], <span style="color: #009999">50</span>);
+        }
+      }
+      <span style="color: #0000aa">else</span>{
+        falsePasses++;
+      }
+      leaf(node-&gt;child[i], tolerence, choice);
+    }
+  }
+}
+
+<span style="color: #aaaaaa; font-style: italic">//function for looping</span>
+<span style="color: #00aaaa">void</span> <span style="color: #00aa00">task4</span>(Node *node, <span style="color: #00aaaa">double</span> tolerence, <span style="color: #00aaaa">int</span> choice){
+  <span style="color: #0000aa">if</span>(ran == <span style="color: #009999">0</span>){
+    leaf(node, tolerence, choice);
+  }
+  <span style="color: #0000aa">else</span> <span style="color: #0000aa">if</span>(falsePasses &gt; <span style="color: #009999">0</span>){
+    ran++;
+    falsePasses = <span style="color: #009999">0</span>;
+    leaf(node, tolerence, choice);
+  }
+  <span style="color: #0000aa">else</span>{
+    destroyTree(node);
+  }
+}
+</pre></div>
+
+  </body>
+</html>

@@ -1,48 +1,4 @@
 /*Portfolio Styles */
-/* .linkContainer {
-	display: block;
-	height: 13.5vh;
-	width: 100%;
-	font-size: 2.5rem;
-	text-align: center;
-	line-height: 13.5vh;
-	color: #f1f1f1; no-repeat center;
-}
-
-.linkContainer {
-	width: 100%;
-}
-
-.linkContainer h2 {
-	float: left;
-	width: 60%;
-	height: 13.5vh;
-	text-decoration: none;
-	color: #2d2d2d;
-}
-
-.linkContainer img {
-	float: right;
-	max-height: 9vh;
-	min-width: 30%;
-	max-width: 30vw;
-	padding: 0.5vh 0;
-	padding-right: 0.5vw;
-	object-fit: cover;
-	-webkit-filter: grayscale(100%);
-}
-
-.imageContainer {
-	display: block;
-	float: right;
-	height: 10vh;
-	width: 100%;
-	font-size: 2.5rem;
-	text-align: center;
-	line-height: 10vh;
-	background-color: #f1f1f1;
-} */
-
 #main {
 	height: 100%;
 	width: 100%;
@@ -50,7 +6,7 @@
 
 #title {
 	float: left;
-	width: 50vw;
+	width: 20vw;
 	height: 80vh;
 	padding: 1vh 0;
 	background-color: #2d2d2d;
@@ -64,34 +20,43 @@
 	line-height: 20vh;
 	font-size: 2rem;
 	color: #f1f1f1;
-}
-
-#details {
-	float: right;
-	width: 50vw;
-	height: 80vh;
-	padding: 1vh 0;
-	background-color: #d34836;
+	cursor:pointer;
 }
 
 #desc {
+	overflow: auto;
 	float: left;
-	width: 25vw;
+	width: 30vw;
 	height: 80vh;
 	padding: 1vh 0;
-	background-color: #d34836;
+	background-color: #2d2d2d;
 }
 
 #desc li {
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 	height: 20vh;
-	width: 25vw;
+	width: 24vw;
+	padding: 0 3vw;
 	color: #f1f1f1;
+}
+
+
+#desc li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#desc li:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 
 #img {
 	float: right;
-	width: 25vw;
+	width: 20vw;
 	height: 80vh;
 	padding: 1vh 0;
 	background-color: #d34836;
@@ -103,4 +68,41 @@
 	width: 25vw;
 	margin: 1vh 1vw;
 	color: #f1f1f1;
+}
+
+#display {
+	display: block;
+	float: left;
+	width: 50vw;
+	height: 100%;
+	background-color: #d34836;
+}
+
+#display p {
+	margin: auto;
+	color: white;
+}
+
+#codename {
+	width: 37vw;
+	height: 5vh;
+	line-height: 5vh;
+	padding-left: 3vw;
+	margin: auto;
+	margin-top: 5%;
+	color: white;
+	background: #2d2d2d;
+}
+
+#page {
+	overflow-y: scroll;
+	width: 40vw;
+	height: 80%;
+	margin: auto;
+	font-size: 0.75rem;
+	background-color: #1d1d1d;
+}
+
+#title li:hover {
+	color: #d34836;
 }

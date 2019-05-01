@@ -1,19 +1,26 @@
 /*Education Styles*/
 body {
 	overflow-x: hidden;
-	background: #2d2d2d;
-	/* background: #2d2d2d url("../resources/code_background4.jpg") center; */
+	background: #2d2d2d url("../resources/code_background4.jpg") center;
 }
 
 #main {
+	background: #2d2d2d;
 	padding-bottom: 10vh;
 	font-family: 'Roboto Slab';
+}
+
+#navigation {
+	height: 10vh;
+	line-height: 10vh;
+	background-color: #f1f1f1;
 }
 
 table {
 	width: 80%;
 	margin: auto;
-	margin-top: 0.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
 	font-size: 1.5rem;
 }
 

@@ -54,22 +54,6 @@
     height: 100%;
 }
 
-#img {
-	float: right;
-	width: 20vw;
-	height: 80vh;
-	padding: 1vh 0;
-	background-color: #d34836;
-}
-
-#img li {
-	display: block;
-	height: 17.5vh;
-	width: 25vw;
-	margin: 1vh 1vw;
-	color: #f1f1f1;
-}
-
 #display {
 	display: block;
 	float: left;
@@ -105,4 +89,26 @@
 
 #title li:hover {
 	color: #d34836;
+}
+
+@media only screen and (max-width : 1000px) {
+	#desc {
+		display: none;
+	}
+
+	#title {
+		width: 25vw;
+	}
+
+	#display {
+		width: 75vw;
+	}
+
+	#page {
+		width: 70vw;
+	}
+
+	#codename {
+		width: 67vw;
+	}
 }

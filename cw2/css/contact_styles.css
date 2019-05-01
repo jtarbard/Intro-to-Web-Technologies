@@ -68,3 +68,21 @@ input, textarea {
 #mobile {
   padding-bottom: 1.5rem;
 }
+
+@media only screen and (max-width : 800px) {
+  #info {
+    width: 30vw;
+  }
+
+  #messagecon {
+    width: 70vw;
+  }
+
+  input {
+    width: 30vw;
+  }
+
+  #message {
+    width: 63vw;
+  }
+}

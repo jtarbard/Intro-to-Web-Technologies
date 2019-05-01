@@ -96,6 +96,10 @@ li {
 	overflow: hidden;
 }
 
+#ddlink {
+	display: none;
+}
+
 /*Footer*/
 #footer {
 	display: block;
@@ -112,4 +116,58 @@ li {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: grey;
+}
+
+/* Mobile */
+@media only screen and (min-width : 0px) and (max-width : 1000px) {
+	/*Navigation*/
+	#navigation {
+		position: fixed;
+		width: 100%;
+		height: 50vh;
+		line-height: 10vh;
+		font-size: 1.5rem;
+		background-color: transparent;
+	}
+
+	#navigation li {
+		overflow: hidden;
+		margin-top: -0.1%;
+	}
+
+	#ddlink {
+		display: block;
+		float: right;
+		width: 20%;
+		padding-left: 10%;
+		margin: 0% 0%;
+	}
+
+	#ddlink li {
+		display: block;
+		float: right;
+	}
+
+	#index {
+		display: block;
+		padding-left: 10%;
+		padding-right: 10%;
+		text-align: left;
+	}
+
+	.dropdown {
+		display: none;
+		float: right;
+		width: 20%;
+		padding: 0% 10%;
+		margin-left: 60%;
+		text-align: right;
+		background-color: #f1f1f1;
+		background-color: rgba(241,241,241,0.95);
+	}
+
+	/* Footer */
+	#footer {
+		font-size: 1.7rem;
+	}
 }
